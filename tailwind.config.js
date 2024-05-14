@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
         backgroundImage : {
-          'svgTopHead' : "url('/src/images/nav-edge.svg')",
+          'svgTopHead' : "url('./src/images/nav-edge.svg')",
         },
         colors:{
             sidebar:{
