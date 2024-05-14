@@ -1,0 +1,41 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+.activeUrl{
+    @apply bg-primary-active shadow-xl shadow-primary-active/60 text-light-active rounded-full
+}
+.circleOverLi {
+    @apply before:absolute before:bg-primary-medium before:content-[""] before:top-[.25rem] before:-left-[2.09rem]
+    before:h-4 before:w-4 before:rounded-full
+    after:absolute after:bg-primary-medium/30 after:content-[""] after:-top-0 after:-left-[2.30rem] after:h-6
+    after:w-6 after:rounded-full;
+}
+
+@layer base {
+    body{
+        @apply bg-light
+    }
+}
+.bodyStyle h1{
+    @apply m-0 p-0
+}
+.bodyStyle h3{
+    @apply font-black leading-10 text-xl mt-4
+}
+.bodyStyle p{
+    @apply font-extralight leading-10 m-0 p-0
+}
+.bodyStyle img{
+    @apply my-4
+}
+.bodyStyle ul{
+    @apply list-disc
+}
+.bodyStyle ul li{
+    @apply font-light text-base text-gray-800
+}
+.highlight {
+    @apply relative before:z-0 before:w-16 before:h-7 before:bg-no-repeat
+    before:bg-[url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=c9d9e8)]
+    before:content-[""] before:absolute before:top-0 ltr:left-0 rtl:before:right-0;
+}
