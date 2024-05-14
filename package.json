@@ -4,7 +4,8 @@
   "description": "This project aims to simplify resume creation for individuals of all backgrounds and professions",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/main.css -o ./src/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/main.css -o ./src/output.css --watch",
+    "build": "npx tailwindcss -i ./src/main.css -o ./src/output.css --minify"
   },
   "author": "",
   "license": "ISC",
