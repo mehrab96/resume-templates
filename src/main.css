@@ -10,10 +10,16 @@
     after:absolute after:bg-primary-medium/30 after:content-[""] after:-top-0 after:-left-[2.30rem] after:h-6
     after:w-6 after:rounded-full;
 }
-
+.webkit-inline-box {
+    @apply max-mini:!inline-block max-mini:pl-4 max-mini:overflow-x-scroll; /* Fallback for browsers that do not support -webkit-inline-box */
+    display: -webkit-inline-box !important;
+  }
+  .webkit-inline-box a{
+    @apply max-mini:mt-3
+  }
 @layer base {
     body{
-        @apply bg-light
+        @apply bg-light overflow-x-hidden
     }
 }
 .bodyStyle h1{
